@@ -5,15 +5,21 @@ A .git hidden folder gets created in the directory. It is necessary so that the 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-The working diretory contains all files cloned from the repo and contains changed files as well. The repo contains all the committed files. The staging area contains the files that have been changed that I am choosing to get ready for a commit. It is useful as a container of what is currently being worked on in a logical groupong. It would allow me to view this logical group.
+The working directory contains all files cloned from the repo and contains changed files as well. The repo contains all the committed files. The staging area contains the files that have been changed that I am choosing to get ready for a commit. It is useful as a container of what is currently being worked on in a logical grouping. It would allow me to view this logical group.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+I can add all files to the staging area that are part of the logical change. I can review this by looking at git diff --staged to see what was there. git diff would help me see if there is anything else I need to add to the staging area.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+When I want to try something experimental. When I want to add a new feature to the product. Basically any time I am making a change and don't want it to immediately affect the master branch. Having the history of that branch allows me to logically see just those changes and helps me be more organised.
+
 How do the diagrams help you visualize the branch structure?
+
+They can help plot the graph of changes and how each branch takes a code base from master. It is then easier to see the Reachability of each commit as well. This could help when trying to understand when commits have gone missing.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
