@@ -24,5 +24,7 @@ They can help plot the graph of changes and how each branch takes a code base fr
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+It brings all of the code from one branch and incorporates it into the other (usually master) branch. This is easier to visualise in a diagram as it shows the point at which the two branches become one again. A good command for doing this is git log --graph --oneline
+
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
