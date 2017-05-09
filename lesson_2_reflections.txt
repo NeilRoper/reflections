@@ -28,3 +28,4 @@ It brings all of the code from one branch and incorporates it into the other (us
 
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
+It can save time to automatically merge when there is only new functionality on both branches. However, automativally doing it may make a developer not aware of the changes that went in. Also, the automatic merge could introduce a bug or lead to poor code quality if two similar functions with different names are added as the automatic merge won't suggest a refactoring.
